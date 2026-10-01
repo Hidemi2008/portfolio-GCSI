@@ -1,4 +1,4 @@
-import NFTCard from './components/NFTCard'
+import NFTCard from './components/NFTCard/NFTCard'
 import cyberCity from './assets/images/cyber-city.jpg'
 import avatar from './assets/images/avatar.jpg'
 import './App.css'
