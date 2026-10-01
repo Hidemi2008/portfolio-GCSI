@@ -90,3 +90,37 @@
     font-weight: 400;
     color: var(--color-white);
 }
+
+/* Small phones */
+@media (max-width: 360px) {
+    .nft-card {
+        padding: 18px;
+    }
+
+    .nft-card__title {
+        font-size: 1.25rem;
+    }
+
+    .nft-card__description {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .nft-card {
+        max-width: 380px;
+        padding: 28px;
+    }
+
+    .nft-card__title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .nft-card {
+        max-width: 400px;
+    }
+}
