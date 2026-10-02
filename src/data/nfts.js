@@ -14,7 +14,7 @@ const nfts = [
     price: '0.041',
     timeLeft: '3 days left',
     image: cyberCity,
-    creator: 'Maria',
+    creator: 'Gabriel',
     avatar: avatar,
   },
   {
