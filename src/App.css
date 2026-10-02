@@ -1,7 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .app {
-  min-height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 48px 16px;
+  gap: clamp(36px, 8vw, 56px);
+  min-height: calc(100vh - var(--header-height));
+  min-height: calc(100dvh - var(--header-height));
+  padding: clamp(28px, 7vw, 48px) var(--page-gutter) clamp(40px, 8vw, 64px);
+  padding-left: max(var(--page-gutter), env(safe-area-inset-left));
+  padding-right: max(var(--page-gutter), env(safe-area-inset-right));
+  padding-bottom: max(clamp(40px, 8vw, 64px), env(safe-area-inset-bottom));
+}
+
+.app__hero,
+.app__about {
+  width: 100%;
+  max-width: 640px;
+  text-align: center;
+}
+
+.app__title {
+  font-size: clamp(1.75rem, 8vw, 3.25rem);
+  font-weight: 700;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+.app__title-accent {
+  color: var(--color-cyan);
+}
+
+.app__subtitle,
+.app__about-text {
+  margin-top: 12px;
+  font-size: clamp(1rem, 3.8vw, 1.0625rem);
+  font-weight: 300;
+  line-height: 1.6;
+  color: var(--color-soft);
+}
+
+.app__collections {
+  width: 100%;
+  min-width: 0;
+}
+
+.app__about {
+  padding: clamp(24px, 6vw, 32px) clamp(18px, 5vw, 24px);
+  background-color: var(--color-card);
+  border-radius: 16px;
+}
+
+.app__about-title {
+  font-size: clamp(1.25rem, 5vw, 1.5rem);
+  font-weight: 600;
+}
+
+/* keep anchors from hiding under the sticky header */
+.app,
+#collections,
+#about {
+  scroll-margin-top: var(--header-height);
+}
+
+/* Landscape phones: keep the page compact */
+@media (max-height: 480px) and (orientation: landscape) {
+  .app {
+    gap: 32px;
+    padding-top: 24px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }

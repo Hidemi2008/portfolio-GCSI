@@ -5,6 +5,22 @@
   --color-soft: hsl(215, 51%, 70%);
   --color-white: hsl(0, 0%, 100%);
   --color-cyan: hsl(178, 100%, 50%);
+
+  --header-height: 64px;
+  --page-gutter: 16px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --header-height: 72px;
+    --page-gutter: 32px;
+  }
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -21,10 +37,16 @@ body {
   color: var(--color-white);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  min-width: 320px;
   overflow-x: hidden;
+  overflow-wrap: break-word;
 }
 
 img {
   display: block;
   max-width: 100%;
+}
+
+button {
+  touch-action: manipulation;
 }

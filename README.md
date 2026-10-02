@@ -53,7 +53,7 @@ As cores vêm das variáveis CSS já existentes em `src/index.css`, então o Hea
 
 | Desktop | Mobile |
 | --- | --- |
-| ![Versão desktop](docs/screenshot-desktop.png) | ![Versão mobile](docs/screenshot-mobile.png) |
+| ![Versão desktop](src/assets/images/Captura%20de%20tela%202026-10-02%20175024.png) | ![Versão mobile](src/assets/images/Captura%20de%20tela%202026-10-02%20180321.png) |
 
 ## Vídeo ou GIF
 
