@@ -59,7 +59,7 @@ As cores vêm das variáveis CSS já existentes em `src/index.css`, então o Hea
 
 > Grave um GIF ou vídeo curto mostrando a entrada dos cards, o hover, a navegação e a versão mobile, e salve em `docs/demo.gif`.
 
-![Demonstração](docs/demo.gif)
+![Demonstração](src/assets/images/Gravação%20de%20Tela%202026-10-02%20180805.mp4)
 
 ## Demo
 
