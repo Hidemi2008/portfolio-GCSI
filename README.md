@@ -53,11 +53,11 @@ As cores vêm das variáveis CSS já existentes em `src/index.css`, então o Hea
 
 | Desktop | Mobile |
 | --- | --- |
-| ![Versão desktop](src/assets/images/Captura%20de%20tela%202026-10-02%20175024.png) | ![Versão mobile](src/assets/images/Captura%20de%20tela%202026-10-02%20180321.png) |
+| ![Versão desktop](src/assets/images/telaInteira.png) | ![Versão mobile](src/assets/images/telaMobile.png) |
 
 ## Demonstração
  
-![Demonstração](demo.gif)
+![Demonstração](src/assets/images/demo.gif)
 
 ## Demo
 
