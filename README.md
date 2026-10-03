@@ -94,12 +94,13 @@ npm run preview
 
 ## Publicação no GitHub Pages
 
-O Vite precisa saber que o site fica em uma subpasta (`/nome-do-repositorio/`). Isso é feito pela opção `base` em `vite.config.js`, que por padrão vale `/neonvault/`.
+O Vite precisa saber que o site fica em uma subpasta (`/nome-do-repositorio/`). Isso é feito pela opção `base` em `vite.config.js`, configurada neste projeto como `/portfolio-GCSI/`.
 
-1. Se o repositório tiver outro nome, altere o valor padrão de `base` em `vite.config.js` (ou defina `VITE_BASE=/nome-do-repositorio/` ao rodar o build).
-2. Rode `npm run deploy`. O script gera o build e publica a pasta `dist` na branch `gh-pages`.
-3. No GitHub, abra **Settings → Pages**, escolha a branch `gh-pages` (pasta `/root`) e salve.
-4. O site ficará em `https://hidemi2008.github.io/portfolio-GCSI/`.
+O workflow em `.github/workflows/deploy.yml` gera o build e publica a pasta `dist` automaticamente a cada push na branch `main`.
+
+1. No GitHub, abra **Settings → Pages** e selecione **GitHub Actions** em **Build and deployment → Source**.
+2. Faça push para a branch `main` ou execute manualmente o workflow **Deploy to GitHub Pages** na aba **Actions**.
+3. O site ficará em `https://hidemi2008.github.io/portfolio-GCSI/`.
 
 ## Estrutura
 
