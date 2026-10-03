@@ -2,6 +2,18 @@
 
 Coleção responsiva de NFTs gerados por IA, com visual neon, cards animados e interface construída em React.
 
+🔗 **[Ver site publicado](https://USUARIO.github.io/neonvault/)** · 📂 **[Repositório](https://github.com/USUARIO/neonvault)**
+
+## Demonstração
+
+![Demonstração do NeonVault](src/assets/images/demo.gif)
+
+## Screenshots
+
+| Desktop | Mobile |
+| --- | --- |
+| ![Versão desktop](src/assets/images/telaInteira.png) | ![Versão mobile](src/assets/images/telaMobile.png) |
+
 ## Sobre o projeto
 
 O **NeonVault** é um projeto acadêmico de portfólio desenvolvido em grupo. O objetivo é praticar a construção de interfaces com React: componentização (`Header`, `CardList`, `NFTCard`), responsividade, animações e publicação em produção com o GitHub Pages.
@@ -45,43 +57,7 @@ A aplicação apresenta uma vitrine de NFTs com título, descrição, preço em 
 | Destaque | `hsl(178, 100%, 50%)` (ciano neon) |
 | Espaçamentos | Múltiplos de 4/8 px (8, 16, 24, 32, 48, 56) |
 
-As cores vêm das variáveis CSS já existentes em `src/index.css`, então o Header combina com os cards sem alterar o trabalho anterior.
-
-## Screenshots
-
-> Adicione as capturas de tela na pasta `docs/` e ajuste os nomes abaixo.
-
-| Desktop | Mobile |
-| --- | --- |
-| ![Versão desktop](src/assets/images/telaInteira.png) | ![Versão mobile](src/assets/images/telaMobile.png) |
-
-## Demonstração
- 
-![Demonstração](src/assets/images/demo.gif)
-
-## Demo
-
-[https://USUARIO.github.io/NOME-DO-REPOSITORIO/](https://USUARIO.github.io/NOME-DO-REPOSITORIO/)
-
-> Substitua `USUARIO` e `NOME-DO-REPOSITORIO` pelos valores reais depois de publicar.
-
-## Repository
-
-[https://github.com/USUARIO/NOME-DO-REPOSITORIO](https://github.com/USUARIO/NOME-DO-REPOSITORIO)
-
-> Substitua pelo link real do repositório.
-
-## Autores
-
-- Gabriel: NFTCard e estrutura inicial ([perfil no GitHub](https://github.com/USUARIO-GABRIEL))
-- Maria: CardList, imagens, animações e responsividade ([perfil no GitHub](https://github.com/USUARIO-MARIA))
-- Mayara Meira: Header, identidade visual, README e deploy ([perfil no GitHub](https://github.com/USUARIO-MAYARA))
-
-> Confirme nomes completos e a divisão de tarefas, e troque os links de perfil pelos reais.
-
-## IA
-
-As imagens dos NFTs e a logo do projeto foram geradas com o [Leonardo AI](https://app.leonardo.ai/).
+As cores são definidas como variáveis CSS em `src/index.css` e compartilhadas por todos os componentes.
 
 ## Animações
 
@@ -94,6 +70,13 @@ A aplicação foi desenvolvida para:
 - **Mobile**: Header com botão Menu e painel de navegação, cards em coluna única.
 - **Tablet** (a partir de 768 px): navegação inline e cards maiores.
 - **Desktop** (a partir de 1024 px): grade de várias colunas, com largura máxima de 1280 px.
+
+## Acessibilidade
+
+- Imagens com texto alternativo (`alt`).
+- HTML semântico (`article`, `header`, `nav`, `main`, `footer`).
+- Ícones decorativos com `aria-hidden="true"`.
+- Animações e transições desativadas para quem usa `prefers-reduced-motion`.
 
 ## Como executar
 
@@ -116,22 +99,45 @@ O Vite precisa saber que o site fica em uma subpasta (`/nome-do-repositorio/`). 
 1. Se o repositório tiver outro nome, altere o valor padrão de `base` em `vite.config.js` (ou defina `VITE_BASE=/nome-do-repositorio/` ao rodar o build).
 2. Rode `npm run deploy`. O script gera o build e publica a pasta `dist` na branch `gh-pages`.
 3. No GitHub, abra **Settings → Pages**, escolha a branch `gh-pages` (pasta `/root`) e salve.
-4. O site ficará em `https://USUARIO.github.io/NOME-DO-REPOSITORIO/`.
+4. O site ficará em `https://USUARIO.github.io/neonvault/`.
 
 ## Estrutura
 
 ```text
 src/
 ├── App.jsx
+├── App.css
 ├── main.jsx
+├── index.css
 ├── components/
 │   ├── Header/
 │   │   ├── Header.jsx
 │   │   └── Header.css
 │   ├── CardList/
+│   │   ├── CardList.jsx
+│   │   └── CardList.css
 │   └── NFTCard/
-├── data/nfts.js
+│       ├── NFTCard.jsx
+│       └── NFTCard.css
+├── data/
+│   └── nfts.js
 └── assets/
     ├── logo.svg
     └── images/
 ```
+
+## Autores
+
+- Gabriel: NFTCard e estrutura inicial ([perfil no GitHub](https://github.com/USUARIO-GABRIEL))
+- Maria: CardList, imagens, animações e responsividade ([perfil no GitHub](https://github.com/USUARIO-MARIA))
+- Mayara Meira: Header, identidade visual, README e deploy ([perfil no GitHub](https://github.com/USUARIO-MAYARA))
+
+## IA
+
+As imagens dos NFTs e a logo do projeto foram geradas com o [Leonardo AI](https://app.leonardo.ai/).
+
+## Créditos
+
+Layout do card inspirado no desafio [NFT Preview Card Component](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U) do Frontend Mentor.
+
+Projeto desenvolvido para fins educacionais.
