@@ -128,9 +128,9 @@ src/
 
 ## Autores
 
-- Gabriel: NFTCard e estrutura inicial ([perfil no GitHub](https://github.com/USUARIO-GABRIEL))
-- Maria: CardList, imagens, animações e responsividade ([perfil no GitHub](https://github.com/USUARIO-MARIA))
-- Mayara Meira: Header, identidade visual, README e deploy ([perfil no GitHub](https://github.com/USUARIO-MAYARA))
+- Gabriel: NFTCard e estrutura inicial ([perfil no GitHub](https://github.com/Hidemi2008))
+- Maria: CardList, imagens, animações e responsividade ([perfil no GitHub](https://github.com/mariapacito))
+- Mayara Meira: Header, identidade visual, README e deploy ([perfil no GitHub](https://github.com/mayarameira-ai))
 
 ## IA
 
