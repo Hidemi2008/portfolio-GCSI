@@ -2,7 +2,7 @@
 
 Coleção responsiva de NFTs gerados por IA, com visual neon, cards animados e interface construída em React.
 
-🔗 **[Ver site publicado](https://USUARIO.github.io/neonvault/)** · 📂 **[Repositório](https://github.com/USUARIO/neonvault)**
+🔗 **[Ver site publicado](https://hidemi2008.github.io/portfolio-GCSI/)** · 📂 **[Repositório](https://github.com/Hidemi2008/portfolio-GCSI)**
 
 ## Demonstração
 
@@ -99,7 +99,7 @@ O Vite precisa saber que o site fica em uma subpasta (`/nome-do-repositorio/`). 
 1. Se o repositório tiver outro nome, altere o valor padrão de `base` em `vite.config.js` (ou defina `VITE_BASE=/nome-do-repositorio/` ao rodar o build).
 2. Rode `npm run deploy`. O script gera o build e publica a pasta `dist` na branch `gh-pages`.
 3. No GitHub, abra **Settings → Pages**, escolha a branch `gh-pages` (pasta `/root`) e salve.
-4. O site ficará em `https://USUARIO.github.io/neonvault/`.
+4. O site ficará em `https://hidemi2008.github.io/portfolio-GCSI/`.
 
 ## Estrutura
 
