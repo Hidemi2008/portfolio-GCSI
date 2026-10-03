@@ -98,9 +98,10 @@ O Vite precisa saber que o site fica em uma subpasta (`/nome-do-repositorio/`). 
 
 O workflow em `.github/workflows/deploy.yml` gera o build e publica a pasta `dist` automaticamente a cada push na branch `main`.
 
-1. No GitHub, abra **Settings → Pages** e selecione **GitHub Actions** em **Build and deployment → Source**.
+1. No GitHub, abra **Settings → Pages** e selecione **GitHub Actions** em **Build and deployment → Source**. Não selecione **Deploy from a branch**, pois essa opção publica o `index.html` de desenvolvimento e causa 404 nos assets.
 2. Faça push para a branch `main` ou execute manualmente o workflow **Deploy to GitHub Pages** na aba **Actions**.
-3. O site ficará em `https://hidemi2008.github.io/portfolio-GCSI/`.
+3. Aguarde a conclusão dos jobs `build` e `deploy` antes de abrir o site.
+4. O site ficará em `https://hidemi2008.github.io/portfolio-GCSI/`.
 
 ## Estrutura
 
