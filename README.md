@@ -57,7 +57,7 @@ As cores vêm das variáveis CSS já existentes em `src/index.css`, então o Hea
 
 ## Demonstração
  
-demo.gif
+![Demonstração](demo.gif)
 
 ## Demo
 
